@@ -48,7 +48,7 @@ pip install -r requirements.txt
 Run the script:
 
 ```bash
-python main.py
+python -m src.main
 ```
 
 After execution, you’ll find:
