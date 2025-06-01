@@ -26,15 +26,16 @@ This tool was designed to work with these platforms:
 
 ## ⚙️ Configuration
 
-Update your login credentials and desired base URL in `config.py`:
+Rename the `.env.example` file to `.env` and enter your credentials there:
 
-```python
+```bash
 # Switch Platform
-BASE_URL = "https://ctf.cyberchallenge.it"
-# BASE_URL = "https://training.olicyber.it"
+BASE_URL=https://ctf.cyberchallenge.it
+# BASE_URL=https://training.olicyber.it
 
-EMAIL = "your@email.com"
-PASSWORD = "your_password"
+# Credentials
+EMAIL=your@email.com
+PASSWORD=your-password
 ```
 
 ## ✅ Usage
@@ -77,5 +78,4 @@ data/
 
 - [ ] CLI support (e.g. `--email`, `--save-to`)
 - [ ] Caching to avoid re-downloading
-- [ ] Automatic `.env` support
 - [ ] Logging (instead of `print()`)

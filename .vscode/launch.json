@@ -8,7 +8,8 @@
       "module": "src.main", // <-- run as a module
       "cwd": "${workspaceFolder}", // <-- set working dir to project root
       "console": "integratedTerminal", // or "externalTerminal"
-      "justMyCode": true
+      "justMyCode": true,
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }
