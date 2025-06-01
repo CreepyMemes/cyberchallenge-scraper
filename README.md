@@ -1,20 +1,21 @@
-# sCCraper
+# sCCraper IT
+
+<p align="center">
+  <img src="assets/cyberchallenge_logo.png" height="100px" alt="Cyber Challenge logo" style="margin-right: 20px;">
+  <img src="assets/olicyber_logo.png" height="100px" alt="OliCyber logo" style="margin-left: 20px;">
+</p>
 
 A Python-based scraper for downloading CTF challenges and files from the [CyberChallenge.IT](https://cyberchallenge.it) or [Olicyber.IT](https://training.olicyber.it) platforms using their API.
 
 This tool logs in with your credentials, fetches all available challenges, downloads the metadata and attached files, and organizes everything into a clean folder structure.
 
----
-
 ## 🚀 Features
 
-- 🔐 Login with API token via email/password
-- 📥 Fetches all challenges in the selected platform
-- 💾 Downloads all attached files
-- 🧠 Automatically downloads hints (if user is a `SUPERVISOR`)
-- 📂 Saves everything in a clean folder structure
-
----
+- Login with API token via email/password
+- Fetches all challenges in the selected platform
+- Downloads all attached files
+- Automatically downloads hints (if user is a `SUPERVISOR`)
+- Saves everything in a clean folder structure
 
 ## ⚙️ Configuration
 
@@ -28,8 +29,6 @@ BASE_URL = "https://ctf.cyberchallenge.it"
 EMAIL = "your@email.com"
 PASSWORD = "your_password"
 ```
-
----
 
 ## ✅ Usage
 
@@ -49,8 +48,6 @@ After execution, you’ll find:
 
 - `challenges.json` — metadata of all challenges
 - `challenges/` — subfolders with challenge JSON + files
-
----
 
 ## 📌 TODO
 
