@@ -1,10 +1,9 @@
 import os
 from session import Session
 from utils import clean_filename, ensure_dir, save_json, get_challenge_dir
+from typing import Any
 
-# ---------- Challenge Processing ----------
-
-def fetch_and_save_challenges(session: Session) -> dict:
+def fetch_and_save_challenges(session: Session) -> dict[str, Any]:
     """
     Fetches and saves the metadata of all challenges in a JSON file.
     """
@@ -13,29 +12,21 @@ def fetch_and_save_challenges(session: Session) -> dict:
     return data
 
 
-def download_files(session, files_dir, challenge_data, token_download):
-    """
-    Downloads all files attached to a challenge and saves them in it's subdirectory.
-    """
-    for challenge_file_data in challenge_data['files']: 
-        session.download_file(challenge_file_data, files_dir)
-
-
-def fetch_challenge_data(session: Session, challenge_id: int) -> dict:
+def fetch_challenge_data(session: Session, challenge_id: int) -> dict[str, Any]:
     """
     Fetches challenge metadata from the API in JSON format
     """
     return session.api_get(f"challenges/{challenge_id}")
 
 
-def fetch_challenge_hints(session: Session, challenge_hints: list) -> list:
+def fetch_challenge_hints(session: Session, challenge_hints: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """
     Fetches all hints for the given challenge from the API as a List
     """
     return [session.api_get(f"hint/{hint['id']}") for hint in challenge_hints]
 
 
-def process_challenge(session: Session, challenge: dict, event: str, section: str):
+def process_challenge(session: Session, challenge: dict[str, Any], event: str, section: str):
     """
     Process current given challenge, downloading it's metadata (in JSON format) and any attached files.
     """
@@ -60,7 +51,7 @@ def process_challenge(session: Session, challenge: dict, event: str, section: st
     print(f'Done downloading: {title}')
 
 
-def scrape_all(session: Session, challenge_data: dict):
+def scrape_all(session: Session, challenge_data: dict[str, Any]):
     """
     Iterates through all challenges, downloading their metadata (in JSON format) and any attached files.
     Each challenge is stored in its own subdirectory within a central output folder.

@@ -1,4 +1,5 @@
 import requests
+from typing import Any
 
 class Session:
     """
@@ -32,7 +33,7 @@ class Session:
         self.group = user_info.get('group')
 
 
-    def api_get(self, path: str) -> dict:
+    def api_get(self, path: str) -> dict[str, Any]:
         """
         Performs an authenticated GET request to the API and returns the JSON response.
         """

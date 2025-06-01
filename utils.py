@@ -1,6 +1,7 @@
 import os
 import re
 import json
+from typing import Any
 
 def clean_filename(title: str) -> str:
     """
@@ -16,7 +17,7 @@ def get_challenge_dir(event: str, section: str, title: str) -> str:
     return os.path.join('challenges', clean_filename(event), clean_filename(section), clean_filename(title))
 
 
-def ensure_dir(path):
+def ensure_dir(path: str):
     """
     Create a directory if it doesn't exist.
     """
@@ -24,7 +25,7 @@ def ensure_dir(path):
         os.makedirs(path)    
 
 
-def save_json(path: str, data: dict):
+def save_json(path: str, data: dict[str, Any]):
     """
     Saves the given dict to a json file in the given path
     """
