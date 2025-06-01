@@ -24,6 +24,14 @@ This tool was designed to work with these platforms:
 - Automatically downloads hints (if user is a `SUPERVISOR`)
 - Saves everything in a clean folder structure
 
+## ⭐ Getting Started
+
+Clone the repository with:
+
+```bash
+git clone https://github.com/CreepyMemes/sCCraper-IT.git && cd sCCraper-IT
+```
+
 ## ⚙️ Configuration
 
 Rename the `.env.example` file to `.env` and enter your credentials there:
@@ -39,13 +47,6 @@ PASSWORD=your-password
 ```
 
 ## ✅ Usage
-
-### Clone the repository
-
-```bash
-git clone https://github.com/CreepyMemes/sCCraper-IT.git
-cd sCCraper-IT
-```
 
 ### Install dependencies:
 
@@ -67,11 +68,13 @@ After execution, you’ll find the output folder `data/` generated in the **root
 data/
 ├── challenges.json/               # Metadata of all challenges
 ├── challenges/
-│   ├── event
-│   │   ├── section
-│   │   │   ├── challenge
+│   ├── event/
+│   │   ├── section/
+│   │   │   ├── challenge/
 │   │   │   │   ├── challenge.json # Challenge description
-│   │   │   │   └── files          # Attached files
+│   │   │   │   └── files/
+│   │   │   │       ├── file       # Attached file
+         ...
 ```
 
 ## 📌 TODO
