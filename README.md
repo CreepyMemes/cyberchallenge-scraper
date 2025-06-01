@@ -34,7 +34,7 @@ git clone https://github.com/CreepyMemes/sCCraper-IT.git && cd sCCraper-IT
 
 ## ⚙️ Configuration
 
-Rename the `.env.example` file to `.env` and enter your credentials there:
+Make a new `.env` file in root directory, and enter your credentials there, follow the example at  `.env.example`:
 
 ```bash
 # Switch Platform
