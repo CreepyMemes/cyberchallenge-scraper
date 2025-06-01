@@ -39,22 +39,39 @@ PASSWORD = "your_password"
 
 ## ✅ Usage
 
-Install dependencies:
+### Clone the repository
+
+```bash
+git clone https://github.com/CreepyMemes/sCCraper-IT.git
+cd sCCraper-IT
+```
+
+### Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the script:
+### Run the script:
 
 ```bash
 python -m src.main
 ```
 
-After execution, you’ll find:
+## 📂 Output structure
 
-- `challenges.json` — metadata of all challenges
-- `challenges/` — subfolders with challenge JSON + files
+After execution, you’ll find the output folder `data/` generated in the **root directory**, with the following structure:
+
+```bash
+data/
+├── challenges.json/               # Metadata of all challenges
+├── challenges/
+│   ├── event
+│   │   ├── section
+│   │   │   ├── challenge
+│   │   │   │   ├── challenge.json # Challenge description
+│   │   │   │   └── files          # Attached files
+```
 
 ## 📌 TODO
 

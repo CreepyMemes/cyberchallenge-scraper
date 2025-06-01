@@ -1,14 +1,24 @@
 import os
-from session import Session
-from utils import clean_filename, ensure_dir, save_json, get_challenge_dir
 from typing import Any
+from src.core.session import Session
+from src.core.utils import (
+    clean_filename, 
+    ensure_dir, save_json, 
+    get_challenge_dir, 
+    get_data_dir
+)
 
 def fetch_and_save_challenges(session: Session) -> dict[str, Any]:
     """
     Fetches and saves the metadata of all challenges in a JSON file.
     """
     data = session.api_get("challenges")
-    save_json("challenges.json", data)
+    data_dir = get_data_dir()
+    ensure_dir(data_dir)
+
+    data__file_path = os.path.join(data_dir, 'challenges.json')
+    save_json(data__file_path, data)
+
     return data
 
 
