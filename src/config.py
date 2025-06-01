@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+load_dotenv(override=True)
 
 BASE_URL = os.environ["BASE_URL"]
 EMAIL = os.environ["EMAIL"]
