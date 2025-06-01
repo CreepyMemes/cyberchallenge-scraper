@@ -1,6 +1,6 @@
-# Cyberchallenge.it Scraper
+# sCCraper
 
-A Python-based scraper for downloading CTF challenges and files from the [CyberChallenge.IT](https://cyberchallenge.it) or [Olicyber](https://training.olicyber.it) platforms using their API.
+A Python-based scraper for downloading CTF challenges and files from the [CyberChallenge.IT](https://cyberchallenge.it) or [Olicyber.IT](https://training.olicyber.it) platforms using their API.
 
 This tool logs in with your credentials, fetches all available challenges, downloads the metadata and attached files, and organizes everything into a clean folder structure.
 
