@@ -1,8 +1,8 @@
-# sCCraper IT
+<div align="center"><img src="assets/sCCraper-IT-logo.png" height="100px" alt="sCCraper-IT logo"></div>
 
-<p align="center">
-  <img src="assets/sCCraper-IT-logo.png" height="200px" alt="sCCraper-IT logo">
-</p>
+<h2 align="center">sCCraper IT</h2>
+
+## ✨ Introduction
 
 **sCCraper IT** is a Python-based tool designed to automate the download of all the available **CTF challenges**, including their metadata and attached files, via the platform APIs. It organizes the retrieved content into a structured, easy-to-navigate folder hierarchy.
 
