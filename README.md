@@ -1,8 +1,7 @@
 # sCCraper IT
 
 <p align="center">
-  <img src="assets/cyberchallenge_logo.png" height="100px" alt="Cyber Challenge logo" style="margin-right: 20px;">
-  <img src="assets/olicyber_logo.png" height="100px" alt="OliCyber logo" style="margin-left: 20px;">
+  <img src="assets/sCCraper-IT-logo.png" height="200px" alt="sCCraper-IT logo">
 </p>
 
 A Python-based scraper for downloading CTF challenges and files from the [CyberChallenge.IT](https://cyberchallenge.it) or [Olicyber.IT](https://training.olicyber.it) platforms using their API.
