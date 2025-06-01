@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Main",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "src.main", // <-- run as a module
+      "cwd": "${workspaceFolder}", // <-- set working dir to project root
+      "console": "integratedTerminal", // or "externalTerminal"
+      "justMyCode": true
+    }
+  ]
+}
