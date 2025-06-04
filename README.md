@@ -66,7 +66,7 @@ After execution, you’ll find the output folder `data/` generated in the **root
 
 ```bash
 data/
-├── challenges.json/               # Metadata of all challenges
+├── challenges.json                # Metadata of all challenges
 ├── challenges/
 │   ├── event/
 │   │   ├── section/
